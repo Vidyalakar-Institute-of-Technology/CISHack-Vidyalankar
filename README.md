@@ -1,6 +1,6 @@
 ![](https://storage.googleapis.com/incind/CISDarkeLJBiNH.png)
 
-## Code Innovation Hackathon - TIET
+## Code Innovation Hackathon - Vidyalankar Institute Of Technology
 This is the official Idea/project submission repository for CODE INNOVATION SERIES HACKATHON - Vidyalankar Institute Of Technology.
 
 ## Submission Procedure
