@@ -1,0 +1,11 @@
+DESCRIPTION: We are making a website portal using html, css, django.
+
+CONTENT: By understanding the needs of the user we have designed the portal accordingly.
+         The portal caters to main type of users 1. explorer
+                                                 2. Project oriented
+         We will make available courses, articles of different genres for different age groups.
+ 
+         To develop Learner Motivation And Engagement.
+
+
+Team Parichay:- 1.Rugved Kharbade 2.Sakshi Padwal 3.Chirag Sonavale 
