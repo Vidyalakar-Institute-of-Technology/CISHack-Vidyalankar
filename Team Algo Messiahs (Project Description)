@@ -1,0 +1,54 @@
+Description :
+A central repository system that helps people look for bed availability, all information reagrding approved private testing labs, latest news, notifications guidelines,
+request and donate blood, nearest doctor consultancy, request for hospital beds, etc.
+
+Contents of project directory:
+Team Algo Messiahs/
+├──images/ (Contains screenshots of our project)
+├── meditech/ 
+│    └── pycache (folder)
+     └── asgi.py
+     └── settings.py
+     └── urls
+     └── wsgi
+├── meditechapp/
+|	 └──migrations (folder)
+   └── templates (folder)
+        └── base.html
+        └── bedsAvailability.html
+        └── bloodDonation.html
+        └── contactus.html
+        └── guidelines.html
+        └── index.html
+        └── privateTestingLab.html
+        └── requestDonation.html
+        └── schemeEligibility.html
+        └── testingLab.html
+    └── init.py
+    └── admin.py
+    └── apps.py
+    └── forms.py
+    └── models.py
+    └── testingLabApiList.py
+    └── tests.py
+    └── urls.py
+    └── views.py  
+├──  static/
+│    └── css (folder)
+         └── app.css
+     └── images
+     └── js
+        └── index.js
+        └── labApi.js
+├──  db.sqlite3
+├──  manage.py
+
+Steps to build Project:
+1) clone the repository
+2) create a virtual environment using command :- python -m venv virt
+3) start virtual environment :- source virt/Scripts/activate
+4) pip install django
+5) cd meditech
+6) To run project:- python manage.py runserver 
+
+
