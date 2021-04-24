@@ -4,6 +4,7 @@ request and donate blood, nearest doctor consultancy, request for hospital beds,
 
 Contents of project directory:
 Team Algo Messiahs/
+├──images/ (Contains screenshots of our project)
 ├── meditech/ 
 │    └── pycache (folder)
      └── asgi.py
@@ -50,6 +51,4 @@ Steps to build Project:
 5) cd meditech
 6) To run project:- python manage.py runserver 
 
-ScreenShots of our project
-1) Home Page
-![homepage](https://github.com/NikitaEmberi/CISHack-Vidyalankar/blob/main/images/home.jpeg?raw=true)
+
