@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datambulance</title>
+    <link href={% static 'css/bootstrap.css' %}  rel="stylesheet" />
+    <link href={% static 'css/bootstrap.min.css' %}  rel="stylesheet" />
+    <link href={% static 'css/styles.css' %} rel="stylesheet" />
+  </head>
+<body style="background-color: #d6f0f8;">
+    <div>{%include 'navbar.html'%}</div>
+    {%block content%}
+    {%endblock content%}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {%block msg%}
+                {%endblock msg%}
+            </div>
+        </div>
+        <div class="row">
+            {%block side%}
+            {%endblock side%}
+            
+        </div>
+    </div>
+ <script src="{%static 'js/jquery.js'%}"></script>   
+ <script src="{%static 'js/popper.js'%}"></script>   
+ <script src="{%static 'js/bootstrap.js'%}"></script> 
+                 <script>
+          window.watsonAssistantChatOptions = {
+              integrationID: "466f8e76-4732-45e7-bd58-85b9029e5c43", // The ID of this integration.
+              region: "jp-tok", // The region your integration is hosted in.
+              serviceInstanceID: "e0e8bbf6-0354-49d5-99a8-59f39dfa8475", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+            document.head.appendChild(t);
+          });
+        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>     
+</body>
+</html>

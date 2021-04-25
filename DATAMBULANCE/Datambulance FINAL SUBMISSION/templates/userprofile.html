@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<br>
+    <div class="container">
+      <div class="row gutters">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+          <div class="card" style="width: 18rem;">
+            <br/>
+            <img src={% static 'qrcodes/data.jpg' %} class="card-img-top " id="qr_code" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{user}}</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <h4 class="mb-3 text-primary">Personal Details</h4>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                     <p>{{user.personal.fullname}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="age">Age</label>
+                    <p>{{user.personal.age}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="eMail">Email</label>
+                    <p>{{user.personal.email}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <p>{{user.personal.phone}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="date">Date of Birth</label>
+                    <p>{{user.personal.dob}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="bloodgrp">Blood Group</label>
+                    <p>{{user.personal.blood}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="allergy">Allergy</label>
+                    <p>{{user.personal.allergy}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="other">Other</label>
+                    <p>{{user.personal.other}}</p>
+                  </div>
+                </div>
+              </div>
+              <br/>
+              <br/>
+              <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="address">Address</label>
+                    <p>{{user.personal.address}}</p>
+                  </div>
+                </div>
+                
+      
+              <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="text-right" href="profile_edit.html">
+                    <br/>
+                    <a href="{% url 'tryuserprofile' user %}" style="background-color: #76c7ed;" class="btn btn-primary">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div style="background-color: #d6f0f8;">
+    <div>
+      <h1 id="record_title">Records</h1>
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin: 10px;">
+      <a class="btn btn-danger" href="{% url 'addpresc'%}" role="button">Add</a>
+      <a class="btn btn-primary" href="{% url 'updatepresc' %}" role="button">Edit</a>
+    </div>
+    <br/>
+
+    <h2>Details</h2>
+
+    <div class="table-wrapper-scroll-y my-custom-scrollbar" style="padding: 30px;" >
+    {% if posts %}
+      <table class="table table-bordered table-striped mb-0" style="border: 1px; margin-right:50px;">
+        <thead style="background-color: darkcyan;">
+          <tr>
+            <th scope="col" width="50 !important">#</th>
+            <th scope="col" width="400">Prescription Name</th>
+            <th scope="col"width="700">Description</th>
+          </tr>
+        </thead>
+        {% for post in posts %}
+        <tbody style="background-color: #b4e3f6;">
+          <tr>
+            <th scope="row">{{post.id}}</th>
+            <td>{{post.title}}</td>
+            <td>{{post.desc}}</td>
+          </tr>
+          {% endfor %}
+      </table>
+    {% else %}
+    <h1>NO DATA</h1>
+    {% endif %}
+    </div>
+    <br />
+    </div>
+{% endblock content %}
+

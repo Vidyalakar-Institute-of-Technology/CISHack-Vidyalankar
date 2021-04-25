@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container ">
+      <div class="row gutters">
+        <div>
+          <div class="card h-100">
+          <br>
+           <br>
+            <div class="card-body">
+              <div class="row gutters">
+              <form action="" method="post" novalidate>
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="update" class="btn btn-primary">
+                </form>
+                <a href="{% url 'userprofile'%}" class="btn btn-danger ">cancel</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+{% endblock content %}
