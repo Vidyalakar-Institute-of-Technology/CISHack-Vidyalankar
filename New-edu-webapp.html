@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>NEW-EDU-WEB-APP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 45%;
+  background-color: yellow;
+  color: white;
+  text-align: center;
+}
+mark { 
+  background-color: black;
+  color: teal;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="https://collegeinfogeek.com/skills-to-learn/" class="w3-bar-item w3-button w3-theme-l1">What to learn</a>
+    <a href="https://www.youtube.com/c/SandeepSeminars/playlists" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Motivational Videos</a>
+    <a href="https://visionshine.com/category/articles/motivational/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Motivational Articles</a>
+    <a href="https://www.proprofs.com/quiz-school/story.php?title=geas-quiz" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Quizes</a>
+    <a href="https://www.coursera.org/browse/computer-science" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Courses</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-small" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <select name="Courses" id="Courses">
+            <option value="Select">Select</option>
+          <option value="Engineering">Engineering</option>
+
+        </select><br><br>
+  <select name="Study" id="Material">
+            <option value="Select">Select</option>
+          <option value="Computer">Computer</option>
+            <option value="IT">IT</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Civil">Civil</option>
+
+        </select><br><br>
+  <a class="w3-bar-item w3-button w3-hover-black" a href="https://www.coursera.org/specializations/c-programming">C-Programming</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.w3schools.com/html/">HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.codecademy.com/learn/introduction-to-javascript">JavaScript</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.coursera.org/learn/python">Python</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><mark>New Educational Web-App</h1></mark>
+      <p><mark>Computer-based training, Web-based training, Internet based training, online training, e-learning (electronic learning), m-learning (mobile learning), computer-aided distance education - online education goes by many names and comes in a variety of styles, but at its core: “Online education is electronically supported learning that relies on the Internet for teacher/student interaction and the distribution of class materials.”</p></mark>
+      <p><mark>
+      From this simple deﬁnition comes an almost inﬁnite number of ways to teach and learn outside of traditional classrooms and away from college campuses. With online education, students can turn anywhere with Internet access and electricity into a classroom. It can include audio, video, text, animations, virtual training environments and live chats with professors. It’s a rich learning environment with much more ﬂexibility than a traditional classroom.</p></mark>
+    </div>
+    <div class="w3-third w3-container">
+      <a class="w3-border w3-padding-large w3-padding-32 w3-center" a href="https://www.proprofs.com/quiz-school/story.php?title=geas-quiz">Quizzes Attempted</a>
+      <a class="w3-border w3-padding-large w3-padding-64 w3-center" a href="https://www.sololearn.com/learning">Lecture Modules Completed</a>
+    </div>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <center>
+      <h1 class="w3-text-teal"><mark>To be Always Happy!</h1></mark>
+      <p><mark>
+      Happiness and determination assure healthy mental well-being. Always we heard that be happy and enthusiastic about life. An optimistic outlook for life can open ample opportunities for our success. Here we have created some of the important paragraphs on How to stay happy and motivated. Kindly read them to know more. Staying happy is one of the best cures for regular life. One could find happiness and motivation at the same time. But question is that How? People complain that they are not mentally satisfied and they always face stress. The stress can be from work or from personal life. For maintaining healthy well-being and a smooth work-life balance its necessary to feel enthusiastic and happy. There are many ways to find a calm state of mind and a cheerful persona. A person can be happy and motivated all the time only he has to look around the things that are worthy of his/her mental health. </p></mark>
+      <p><mark>
+      Happiness is just everyone’s deal only the outlook of an individual differs. Here I am providing some of the points that can be helpful in improvising a person’s enthusiasm and also leads him for a cheerful life:</p></mark>
+      <p><mark>
+      Be Positive: There is both a positive or negative aspect of every situation. The first and foremost key for happiness is to be positive and always see the positive aspect of any scenario. There is a saying that failures are the lessons for success, its simple even your failures are build-up you as a person. So, positivity is a therapy for being cheerful and motivated.</p></mark>
+      <p><mark>
+      Stop Worrying: Worry and future insecurities are the obstructions for progress. What if we stop worrying over small issues? It is not that easy that it sounds, but relieving our self from the worries will be a step towards a happy and determined life.</p></mark>
+    </center>
+  </div>
+  <style>
+body {
+  background-image: url('img.jpg');
+  height: 50%;
+  background-repeat: no-repeat; 
+  background-position: top;
+  background-size: cover;
+}
+</style>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <center>
+      <h1 class="w3-text-teal"><mark>Always be Motivated!</h1></mark>
+      <p><mark>
+      Motivation is an essential factor that changes positive thought into instant action. It switches a great idea into action and can undoubtedly affect the world around you. However, not all are born with motivation. People sometimes have disbelief in themselves; they often say, “I can’t do that” or “the timing is not right.” Being demotivated means living a life as a worn-out machine. Your life will become dull without any spark. So, to gain inner peace and satisfaction in life, you must always stay motivated.</p></mark>
+      <p><mark>
+      Motivation is a force to push you closer toward your dream. If Steve Jobs lacked the motivation to launch Apple, you would not get an iPhone or iPad. It gives you a purpose to live you with a forever smile on the face. Thus, realizing and working on your self-motivation skills will make you capable of taking control of different aspects of life.</p></mark>
+      <p><mark>
+      The critical elements of self-motivation are resilience and optimism. The former will help you bounce back during difficult times, whereas later, you will show you a brighter side ahead. This way, you will be able to control your emotions that are holding you back.</p></mark>
+    </center>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p><i>Developed By Alpha-VP</i></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'none') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
