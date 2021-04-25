@@ -1,30 +1,11 @@
-![](https://storage.googleapis.com/incind/CISDarkeLJBiNH.png)
+# Book My Dose
 
-## Code Innovation Hackathon - Vidyalankar Institute Of Technology
-This is the official Idea/project submission repository for CODE INNOVATION SERIES HACKATHON - Vidyalankar Institute Of Technology.
+<img src="https://raw.githubusercontent.com/bhargav-joshi/bookmydose/main/public/assets/img/logo.png" width="150px">
 
-## Submission Procedure
-Read the following steps and guidelines properly for proper submission of your project. Missing out any step or performing it wrongly can lead to unsuccessful submission. 
+#### - In above repo the node modules & vendor files are not added so if after adding requirements it won't work then you can download the zip file
 
-### Step 1
-#### Fork this repository
+<a href="https://drive.google.com/file/d/1Ndsnahtj8n6JAOygBf8JPReWCs67ubsR/view?usp=sharing">Download Full Zip</a>
 
-### Step 2
-#### Create a New Folder within the forked repository, with the 'folder name' being your 'Team Name'
+## Video Demonstration
 
-## Contents of the folder
-+ The project directory.
-+ The presentation that you will be presenting while presenting your project before the judges.
-+ A text file that contains proper documentation. The documentation should contain:
-    - A description of your project.
-    - The contents of your project directory.
-    - Ways to host your project on the localhost.
-+ The name of the 'pptx' and 'text' files should also be the 'team name'.
-
-### People with only hardware solution are required to submit only the 'pptx' and 'text' files. A link to the video demonstration of your working model should also be included in both the files.
-
-
-### Step 3
-Create a Pull Request only after you have completed the entire project and do not wish to make any further changes. We will not be accepting more than one Pull Request from any team. \
-\
-You can complete your work on the local machine and then upload your project folder in the forked repository and proceed to create a Pull Request (PR).
+[YouTube BookMyDose Demonstration](https://youtu.be/pED-81cGhz4)
