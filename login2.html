@@ -1,0 +1,108 @@
+{% if user.is_authenticated %}
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Welcome {{ request.user }}
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="logout">LOGOUT</a></li>
+  </ul>
+</div>
+{% else %}
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+  SIGNUP
+</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+  LOGIN
+</button>
+{% endif %}
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Welcome to the Family</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form action="signup1/" method="POST">
+            <div class="form-group">
+          <label for="username" class="form-label">username</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Create a unique username">
+          </div>
+          <div class="form-group">
+            <label for="fname" class="form-label">firstname</label>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your firstname">
+          </div>
+         <div class="form-group">
+          <label for="lname" class="form-label">Lastname</label>
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter your lastname">
+          </div>
+          <div class="form-group">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+          <label for="pass1" class="form-label">choose your password</label>
+          <input type="password" class="form-control" id="pass1" name="pass1" placeholder="choose your password">
+          </div>
+          <div class="form-group">
+          <label for="pass2" class="form-label">confirm password</label>
+          <input type="password" class="form-control" id="pass2" name="pass2" placeholder="enter your password again">
+          </div>
+
+             {% csrf_token %}
+
+
+
+
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+          <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Welcome to the Family</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form action="index.html" method="POST">
+            <div class="form-group">
+          <label for="username" class="form-label">username</label>
+          <input type="text" class="form-control" id="loginusername" name="loginusername" placeholder="Enter your username">
+          </div>
+
+          <div class="form-group">
+          <label for="pass1" class="form-label">password</label>
+          <input type="password" class="form-control" id="loginpassword" name="loginpassword" placeholder="Enter your password">
+          </div>
+
+
+             {% csrf_token %}
+
+
+
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
