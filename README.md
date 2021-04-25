@@ -1,2 +1,2 @@
 ## edukit
-### Site: [edukit](https://edukit.netlify.app/)
+### Site Link: [edukit](https://edukit.netlify.app/)
