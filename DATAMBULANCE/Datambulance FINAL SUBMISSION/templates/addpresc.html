@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+      <h1 id="prescription_title">Add Your Prescription</h1>
+    <form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Add" class="btn btn-success">
+    <a href="{% url 'myrecords'%}" class="btn btn-danger">cancel</a>
+</form>
+
+{% endblock content %}
+

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div style="background-color: #d6f0f8;">
+    <div>
+      <h1 id="record_title">Edit Your Prescription</h1>
+    </div>
+    <br/>
+    <table class="table table-bordered table-striped mb-0" style="border: 1px; ">
+      <thead style="background-color: darkcyan;">
+        <tr>
+          <th scope="col" width="50 !important">#</th>
+          <th scope="col" width="400">Prescription Name</th>
+          <th scope="col"width="700">Description</th>
+          <th scope="col"width="100">Delete</th>
+          <th scope="col" width="100">Edit </th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for post in posts %}
+        <tr>
+          <th scope="row">{{post.id}}</th>
+          <td>{{post.title}}</td>
+          <td>{{post.desc}}</td>
+          <td><form action="{% url 'deletepost' post.id%}" method="post" class="d-inline">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-danger btn-sm btn_row_delete" value="Delete">
+            </form></td>
+          <td><a class="btn btn-primary" href="{% url 'update' post.id %}" role="button">Edit</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <br/>
+
+    <div class="d-grid gap-2 col-1 mx-auto">
+      <a class="btn btn-danger" href="{% url 'myrecords'%}" role="button">back</a>
+    </div>
+  </div>
+{% endblock content %}
