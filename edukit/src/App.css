@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+/* 
+.main {
+} */
+
+.btn-icon {
+  background: none;
+  border: none;
+  outline: #fff;
+  color: var(--dk-pink);
+  font-size: 0.65rem;
+  cursor: pointer;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.avatar-top {
+  box-shadow: none;
+  background-color: var(--lt-pink);
+}
